@@ -50,3 +50,4 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'simple_form'
 gem 'devise'
 gem 'cancancan', '~> 1.10'
+gem "rolify"
