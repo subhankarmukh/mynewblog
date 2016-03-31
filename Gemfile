@@ -35,7 +35,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem 'sqlite3'
 end
 
 group :development do
@@ -47,3 +46,4 @@ group :development do
   gem "better_errors"
 end
 
+gem 'bootstrap-sass', '~> 3.3.6'
