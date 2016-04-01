@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'blog_category/show'
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   devise_for :users
