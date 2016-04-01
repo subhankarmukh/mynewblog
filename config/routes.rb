@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :blog_posts
   get 'blog_category/show'
 
   devise_for :admin_users, ActiveAdmin::Devise.config
