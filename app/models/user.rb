@@ -1,6 +1,8 @@
 class User < ActiveRecord::Base
   rolify
 
+  has_many :blog_posts
+
   # Active Record Callbacks
   after_create :add_user_role_in_registration
   # Include default devise modules. Others available are:
