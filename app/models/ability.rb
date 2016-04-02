@@ -7,8 +7,13 @@ class Ability
      user ||= User.new # guest user (not logged in)
      if user.has_role? :admin
          can :manage, :all
+      elsif user.has_role? :user
+        can :read, :all
+
+        can :manage, BlogPost, user: user
      else
-    	 can :read, :all
+
+    	can :read, :all
     end
     #
     # The first argument to `can` is the action you are giving the user

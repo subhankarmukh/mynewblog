@@ -1,5 +1,5 @@
 class BlogPostsController < InheritedResources::Base
-
+  authorize_resource
   private
 
     def blog_post_params
