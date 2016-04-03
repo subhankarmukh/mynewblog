@@ -8,7 +8,13 @@
 </head>
 <body>
 
-<%= yield %>
+  <div id="main" class="main body">
+  	<%= render 'layouts/shared/main_nav' %>
+  	<%= render 'layouts/shared/messages' %>
+  	<div class="container clearfix">
+  	  <%= yield %>
+  	</div>
+  </div>
 
 </body>
 </html>
